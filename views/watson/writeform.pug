@@ -1,0 +1,37 @@
+extends ../common/layout
+
+block content
+                            .col-lg-12
+                                #email-box.clearfix
+                                    .row
+                                        .col-lg-12
+                                                #email-new.email-new-nano
+                                                    .email-new-nano-content
+                                                        #email-new-inner
+                                                            #email-new-title.clearfix
+                                                                span.subject CoverLetter
+                                    .row
+                                        .col-lg-12
+                                            form(role='form', action='/watson/write' method='post')
+                                                #email-new-header
+                                                    .row.form-group
+                                                        .col-md-10
+                                                            label.visible-xs Subject:
+                                                            input#exampleInpSubject.form-control(type='text', name='subject' placeholder='Enter subject')
+                                                #email-new-body
+                                                    .row
+                                                        label.visible-xs Content:
+                                                        .col-md-12
+                                                            textarea#exampleTextarea.form-control(rows='3', name="content")
+                                                #email-new-footer
+                                                    .row
+                                                        .col-xs-12.col-md-10.col-md-offset-2
+                                                            .pull-right
+                                                                .btn-group
+                                                                    button.btn.btn-default(type='button')
+                                                                        i.fa.fa-times
+                                                                        |  Cancel
+                                                                .btn-group
+                                                                    button.btn.btn-success(type='submit')
+                                                                        i.fa.fa-send
+                                                                        |  Register

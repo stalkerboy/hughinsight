@@ -1,0 +1,50 @@
+#config-tool.closed
+    a#config-tool-cog
+        i.fa.fa-cog
+    #config-tool-options
+        h4 Layout Options
+        ul
+            li
+                .checkbox-nice
+                    input#config-fixed-header(type='checkbox')
+                    label(for='config-fixed-header')
+                        | Fixed Header
+            li
+                .checkbox-nice
+                    input#config-fixed-sidebar(type='checkbox')
+                    label(for='config-fixed-sidebar')
+                        | Fixed Left Menu
+            li
+                .checkbox-nice
+                    input#config-fixed-footer(type='checkbox')
+                    label(for='config-fixed-footer')
+                        | Fixed Footer
+            li
+                .checkbox-nice
+                    input#config-boxed-layout(type='checkbox')
+                    label(for='config-boxed-layout')
+                        | Boxed Layout
+            li
+                .checkbox-nice
+                    input#config-rtl-layout(type='checkbox')
+                    label(for='config-rtl-layout')
+                        | Right-to-Left
+        br
+        h4 Skin Color
+        ul#skin-colors.clearfix
+            li
+                a.skin-changer(data-skin='', data-toggle='tooltip', title='Default', style='background-color: #34495e;')
+            li
+                a.skin-changer(data-skin='theme-white', data-toggle='tooltip', title='White/Green', style='background-color: #2ecc71;')
+            li
+                a.skin-changer.blue-gradient(data-skin='theme-blue-gradient', data-toggle='tooltip', title='Gradient')
+            li
+                a.skin-changer(data-skin='theme-turquoise', data-toggle='tooltip', title='Green Sea', style='background-color: #1abc9c;')
+            li
+                a.skin-changer(data-skin='theme-amethyst', data-toggle='tooltip', title='Amethyst', style='background-color: #9b59b6;')
+            li
+                a.skin-changer(data-skin='theme-blue', data-toggle='tooltip', title='Blue', style='background-color: #2980b9;')
+            li
+                a.skin-changer(data-skin='theme-red', data-toggle='tooltip', title='Red', style='background-color: #e74c3c;')
+            li
+                a.skin-changer(data-skin='theme-whbl', data-toggle='tooltip', title='White/Blue', style='background-color: #3498db;')

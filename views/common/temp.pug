@@ -1,0 +1,147 @@
+header#header-navbar.navbar
+    .container
+        a#logo.navbar-brand(href='/')
+            img.normal-logo.logo-white(src='img/logo.png', alt='')
+            img.normal-logo.logo-black(src='img/logo-black.png', alt='')
+            img.small-logo.hidden-xs.hidden-sm.hidden(src='img/logo-small.png', alt='')
+        .clearfix
+            button.navbar-toggle(data-target='.navbar-ex1-collapse', data-toggle='collapse', type='button')
+                span.sr-only Toggle navigation
+                span.fa.fa-bars
+            .nav-no-collapse.navbar-left.pull-left.hidden-sm.hidden-xs
+                ul.nav.navbar-nav.pull-left
+                    li
+                        a#make-small-nav.btn
+                            i.fa.fa-bars
+            #header-nav.nav-no-collapse.pull-right
+                ul.nav.navbar-nav.pull-right
+                    li.mobile-search
+                        a.btn
+                            i.fa.fa-search
+                        .drowdown-search
+                            form(role='search')
+                                .form-group
+                                    input.form-control(type='text', placeholder='Search...')
+                                    i.fa.fa-search.nav-search-icon
+                    li.dropdown.hidden-xs
+                        a.btn.dropdown-toggle(data-toggle='dropdown')
+                            i.fa.fa-warning
+                            span.count 8
+                        ul.dropdown-menu.notifications-list
+                            li.pointer
+                                .pointer-inner
+                                    .arrow
+                            li.item-header You have 6 new notifications
+                            li.item
+                                a(href='#')
+                                    i.fa.fa-comment
+                                    span.content New comment on ‘Awesome P...
+                                    span.time
+                                        i.fa.fa-clock-o
+                                        | 13 min.
+                            li.item
+                                a(href='#')
+                                    i.fa.fa-plus
+                                    span.content New user registration
+                                    span.time
+                                        i.fa.fa-clock-o
+                                        | 13 min.
+                            li.item
+                                a(href='#')
+                                    i.fa.fa-envelope
+                                    span.content New Message from George
+                                    span.time
+                                        i.fa.fa-clock-o
+                                        | 13 min.
+                            li.item
+                                a(href='#')
+                                    i.fa.fa-shopping-cart
+                                    span.content New purchase
+                                    span.time
+                                        i.fa.fa-clock-o
+                                        | 13 min.
+                            li.item
+                                a(href='#')
+                                    i.fa.fa-eye
+                                    span.content New order
+                                    span.time
+                                        i.fa.fa-clock-o
+                                        | 13 min.
+                            li.item-footer
+                                a(href='#')
+                                    | View all notifications
+                    li.dropdown.hidden-xs
+                        a.btn.dropdown-toggle(data-toggle='dropdown')
+                            i.fa.fa-envelope-o
+                            span.count 16
+                        ul.dropdown-menu.notifications-list.messages-list
+                            li.pointer
+                                .pointer-inner
+                                    .arrow
+                            li.item.first-item
+                                a(href='#')
+                                    img(src='img/samples/messages-photo-1.png', alt='')
+                                    span.content
+                                        span.content-headline
+                                            | George Clooney
+                                        span.content-text
+                                            | Look, just because I don't be givin' no man a foot massage don't make it
+                                            | right for Marsellus to throw...
+                                    span.time
+                                        i.fa.fa-clock-o
+                                        | 13 min.
+                            li.item
+                                a(href='#')
+                                    img(src='img/samples/messages-photo-2.png', alt='')
+                                    span.content
+                                        span.content-headline
+                                            | Emma Watson
+                                        span.content-text
+                                            | Look, just because I don't be givin' no man a foot massage don't make it
+                                            | right for Marsellus to throw...
+                                    span.time
+                                        i.fa.fa-clock-o
+                                        | 13 min.
+                            li.item
+                                a(href='#')
+                                    img(src='img/samples/messages-photo-3.png', alt='')
+                                    span.content
+                                        span.content-headline
+                                            | Robert Downey Jr.
+                                        span.content-text
+                                            | Look, just because I don't be givin' no man a foot massage don't make it
+                                            | right for Marsellus to throw...
+                                    span.time
+                                        i.fa.fa-clock-o
+                                        | 13 min.
+                            li.item-footer
+                                a(href='#')
+                                    | View all messages
+                    li.hidden-xs
+                        a.btn
+                            i.fa.fa-cog
+                    li.dropdown.profile-dropdown
+                        a.dropdown-toggle(href='#', data-toggle='dropdown')
+                            img(src='/images/samples/scarlet-159.png', alt='')
+                            span.hidden-xs Scarlett Johansson
+                            b.caret
+                        ul.dropdown-menu
+                            li
+                                a(href='user-profile.html')
+                                    i.fa.fa-user
+                                    | Profile
+                            li
+                                a(href='#')
+                                    i.fa.fa-cog
+                                    | Settings
+                            li
+                                a(href='#')
+                                    i.fa.fa-envelope-o
+                                    | Messages
+                            li
+                                a(href='#')
+                                    i.fa.fa-power-off
+                                    | Logout
+                    li.hidden-xxs
+                        a.btn
+                            i.fa.fa-power-off
